@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: "poppins";
+  src: url("./assets/fonts/poppins.ttf");
+}
+
+:root {
+  --primary-color: rgba(255, 255, 255, 1);
+  --main-color: rgba(234, 238, 243, 1);
+}
+
+.primaryColor {
+  color: var(--primary-color);
+}
+
+.primaryBgColor {
+  background-color: var(--primary-color);
+}
+
+body {
+  background-color: var(--main-color);
+  font-family: "poppins", sans-serif;
+  min-width: 300px;
+  max-width: 1700px;
+  margin: 0px auto;
+}
+
+.poppins-font {
+  font-family: "poppins", sans-serif !important;
+}
