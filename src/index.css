@@ -9,6 +9,7 @@
 :root {
   --primary-color: rgba(255, 255, 255, 1);
   --main-color: rgba(234, 238, 243, 1);
+  --hdngs-black-color: rgba(0, 0, 0, 0.871);
 }
 
 .primaryColor {
@@ -19,10 +20,14 @@
   background-color: var(--primary-color);
 }
 
+.hdngColor {
+  color: var(--hdngs-black-color);
+}
+
 body {
   background-color: var(--main-color);
-  font-family: "poppins", sans-serif;
-  min-width: 300px;
+  font-family: "poppins", sans-serif !important;
+  min-width: 345px;
   max-width: 1700px;
   margin: 0px auto;
 }

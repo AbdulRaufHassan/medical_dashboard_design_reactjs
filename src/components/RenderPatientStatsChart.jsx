@@ -12,7 +12,7 @@ import {
   Area,
 } from "recharts";
 
-function RenderPatientStatsChart({ chartType }) {
+function RenderPatientStatsChart({ infoType }) {
   const pie_chart_data = {
     data: [{ value: 400 }, { value: 500 }, { value: 300 }],
     colors: ["#F1F2F7", "#6164C1", "#13DAFE"],
@@ -136,7 +136,7 @@ function RenderPatientStatsChart({ chartType }) {
 
   return (
     <>
-      {chartType == "pie" ? (
+      {infoType.trim().toLowerCase() === "new patients".toLowerCase() ? (
         <PieChart width={100} height={100}>
           <Pie
             data={pie_chart_data.data}
@@ -154,7 +154,7 @@ function RenderPatientStatsChart({ chartType }) {
             ))}
           </Pie>
         </PieChart>
-      ) : chartType == "bar" ? (
+      ) : infoType.trim().toLowerCase() === "opd patients".toLowerCase() ? (
         <BarChart
           width={150}
           height={80}
@@ -166,7 +166,8 @@ function RenderPatientStatsChart({ chartType }) {
           <Bar dataKey="pv" fill="#13DAFE" />
           <Bar dataKey="uv" fill="#13DAFE" />
         </BarChart>
-      ) : chartType == "line" ? (
+      ) : infoType.trim().toLowerCase() ===
+        "today's operations".toLowerCase() ? (
         <LineChart
           width={150}
           height={100}
@@ -177,7 +178,7 @@ function RenderPatientStatsChart({ chartType }) {
         >
           <Line type="monotone" dataKey="uv" stroke="#696CC4" fill="#FF8800" />
         </LineChart>
-      ) : chartType == "area" ? (
+      ) : infoType.trim().toLowerCase() === "visitors".toLowerCase() ? (
         <ResponsiveContainer width={150} height={100}>
           <AreaChart
             height={80}
