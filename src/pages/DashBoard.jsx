@@ -118,7 +118,7 @@ function DashBoard() {
               />
             </div>
           </div>
-          {/* <AdmitPatientList /> */}
+          <AdmitPatientList />
         </div>
       </main>
       <SideBar showSideBar={showSideBar} setShowSideBar={setShowSideBar} />

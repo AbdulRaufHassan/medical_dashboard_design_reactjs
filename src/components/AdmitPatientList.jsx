@@ -120,6 +120,7 @@ function AdmitPatientList() {
         ADMIT PATIENT LIST
       </h5>
       <Table
+        scroll={{ x: "max-content" }}
         rowHoverable={false}
         pagination={false}
         dataSource={data.map((patient, i) => ({
