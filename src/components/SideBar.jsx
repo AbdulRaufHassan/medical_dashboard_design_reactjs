@@ -100,7 +100,7 @@ function SideBar({ showSideBar, setShowSideBar }) {
   ];
   return (
     <div
-      className={`w-full h-full bg-[#00000073] fixed top-0 left-0 overflow-y-auto ${
+      className={`w-full h-full bg-[#00000073] fixed top-0 left-0 scroll-display-none overflow-y-auto ${
         showSideBar ? "block" : "hidden"
       }`}
     >

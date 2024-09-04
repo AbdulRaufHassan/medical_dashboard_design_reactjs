@@ -10,7 +10,7 @@ import { Avatar } from "antd";
 
 function Header({ showSideBar, setShowSideBar }) {
   return (
-    <header className="w-full h-auto">
+    <header className="w-full h-auto absolute top-0 right-0">
       <div className="w-full flex items-center justify-between h-auto py-4 px-3 primaryBgColor">
         <div className="flex items-center gap-5">
           <button

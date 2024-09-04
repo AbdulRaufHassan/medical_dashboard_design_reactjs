@@ -8,10 +8,10 @@ import AdmitPatientList from "../components/AdmitPatientList";
 import SideBar from "../components/SideBar";
 
 function DashBoard() {
-  const  [showSideBar,setShowSideBar] = useState(false)
+  const [showSideBar, setShowSideBar] = useState(false);
   return (
     <>
-      <Header showSideBar={showSideBar} setShowSideBar={setShowSideBar}/>
+      <Header showSideBar={showSideBar} setShowSideBar={setShowSideBar} />
       <main className="mx-2 md:mx-5 lg:mx-6">
         <div className="flex justify-between items-center my-5 sm:my-9">
           <h1 className="text-[20px] sm:text-[28px] font-semibold text-[#666666] tracking-wider">
