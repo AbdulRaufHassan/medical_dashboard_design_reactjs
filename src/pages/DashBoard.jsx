@@ -24,7 +24,7 @@ function DashBoard() {
             </button>
             <span className="mx-2 text-[#888888]">&gt;</span>
             <button className="hdngColor text-xs sm:text-base font-normal">
-              <span>Dashboard</span>
+              <span>Dashboard</span> 
             </button>
           </div>
         </div>
