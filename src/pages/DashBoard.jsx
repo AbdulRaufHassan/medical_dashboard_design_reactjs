@@ -12,7 +12,7 @@ function DashBoard() {
   return (
     <>
       <Header showSideBar={showSideBar} setShowSideBar={setShowSideBar} />
-      <main className="mx-2 md:mx-5 lg:mx-6">
+      <main className="mx-2 md:mx-5 mt-[125px] lg:mx-6">
         <div className="flex justify-between items-center my-5 sm:my-9">
           <h1 className="text-[20px] sm:text-[28px] font-semibold text-[#666666] tracking-wider">
             Dashboard
@@ -24,7 +24,7 @@ function DashBoard() {
             </button>
             <span className="mx-2 text-[#888888]">&gt;</span>
             <button className="hdngColor text-xs sm:text-base font-normal">
-              <span>Dashboard</span> 
+              <span>Dashboard</span>
             </button>
           </div>
         </div>
